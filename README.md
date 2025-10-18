@@ -81,16 +81,17 @@ All files follow the AFCA Archive Dataset format optimized for historical year-t
     "species_name": "Sockeye Salmon (Red)",
     "year": 1882,
     "data_type": "historical_catch",
-    "source": "Historical canning industry records (1882-1952)",
-    "method": "Commercial catch data",
-    "notes": "Historical data from canning industry - single annual count, no daily breakdown",
+    "source": "National Archives Record Group 022 - Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952",
+    "method": "Commercial catch data from canning industry records",
+    "notes": "Historical data from National Archives - single annual count per year, no daily breakdown",
     "created": "2025-08-18T16:03:01.541282",
     "historical_period": "Pre-ADFG monitoring era",
     "sources": {
       "primary_source": {
-        "type": "ADF&G Fish Counts",
-        "url": "https://www.adfg.alaska.gov/sf/FishCounts/index.cfm?ADFG=main.displayResults&COUNTLOCATIONID=24&SpeciesID=420",
-        "description": "Official ADF&G fish count data for Karluk River"
+        "type": "National Archives Record Group 022",
+        "url": "https://catalog.archives.gov/id/312419233?objectPage=9",
+        "description": "Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952",
+        "image_url": "https://s3.amazonaws.com/NARAprodstorage/lz/seattle/rg-022/95115924/Batch0003/95115924-073/95115924-073-011/95115924-073-011-0002.jpg"
       },
       "secondary_sources": [
         {
@@ -128,13 +129,19 @@ All files follow the AFCA Archive Dataset format optimized for historical year-t
 
 ## 🏔️ Historical Context
 
-The Karluk River sockeye salmon data represents the earliest systematic fish counting in Alaska, beginning in 1882. This historical data provides crucial baseline information for understanding long-term salmon population trends and environmental changes over 71 years.
+The Karluk River sockeye salmon data represents the earliest systematic fish counting in Alaska, beginning in 1882. This historical data comes directly from the National Archives Record Group 022 document titled "Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952" and provides crucial baseline information for understanding long-term salmon population trends and environmental changes over 71 years.
+
+### Primary Source Document:
+- **Document**: National Archives Record Group 022
+- **Title**: "Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952"
+- **Archive URL**: [https://catalog.archives.gov/id/312419233?objectPage=9](https://catalog.archives.gov/id/312419233?objectPage=9)
+- **Image**: [Direct document image](https://s3.amazonaws.com/NARAprodstorage/lz/seattle/rg-022/95115924/Batch0003/95115924-073/95115924-073-011/95115924-073-011-0002.jpg)
 
 ### Key Historical Periods:
-- **1882-1900**: Early commercial fishing era
-- **1900-1920**: Transition to conservation management
-- **1920-1940**: Pre-war fishing expansion
-- **1940-1952**: Post-war fishing development
+- **1882-1900**: Early commercial fishing era (peak catch: 3,985,177 in 1901)
+- **1900-1920**: Transition to conservation management (peak catch: 2,343,104 in 1916)
+- **1920-1940**: Pre-war fishing expansion (peak catch: 2,386,335 in 1926)
+- **1940-1952**: Post-war fishing development (declining catches: 218,791 in 1952)
 
 ## 🔄 Related Datasets
 
