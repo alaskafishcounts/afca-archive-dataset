@@ -1,0 +1,112 @@
+{
+  "version": "3.0.0",
+  "dataset_name": "AFCA Archive Dataset",
+  "description": "Historical fish count data from 1882-1952",
+  "created": "2025-10-18T08:07:02.987240",
+  "index": {
+    "locations": {
+      "24": "karluk-river"
+    },
+    "species": {
+      "420": "sockeye"
+    }
+  },
+  "organized": {
+    "24": {
+      "name": "Karluk River",
+      "slug": "karluk-river",
+      "species": {
+        "420": {
+          "name": "Sockeye",
+          "slug": "sockeye",
+          "files": {
+            "1882": "24/420/1882-karluk-river-sockeye.json",
+            "1883": "24/420/1883-karluk-river-sockeye.json",
+            "1884": "24/420/1884-karluk-river-sockeye.json",
+            "1885": "24/420/1885-karluk-river-sockeye.json",
+            "1886": "24/420/1886-karluk-river-sockeye.json",
+            "1887": "24/420/1887-karluk-river-sockeye.json",
+            "1888": "24/420/1888-karluk-river-sockeye.json",
+            "1889": "24/420/1889-karluk-river-sockeye.json",
+            "1890": "24/420/1890-karluk-river-sockeye.json",
+            "1891": "24/420/1891-karluk-river-sockeye.json",
+            "1892": "24/420/1892-karluk-river-sockeye.json",
+            "1893": "24/420/1893-karluk-river-sockeye.json",
+            "1894": "24/420/1894-karluk-river-sockeye.json",
+            "1895": "24/420/1895-karluk-river-sockeye.json",
+            "1896": "24/420/1896-karluk-river-sockeye.json",
+            "1897": "24/420/1897-karluk-river-sockeye.json",
+            "1898": "24/420/1898-karluk-river-sockeye.json",
+            "1899": "24/420/1899-karluk-river-sockeye.json",
+            "1900": "24/420/1900-karluk-river-sockeye.json",
+            "1901": "24/420/1901-karluk-river-sockeye.json",
+            "1902": "24/420/1902-karluk-river-sockeye.json",
+            "1903": "24/420/1903-karluk-river-sockeye.json",
+            "1904": "24/420/1904-karluk-river-sockeye.json",
+            "1905": "24/420/1905-karluk-river-sockeye.json",
+            "1906": "24/420/1906-karluk-river-sockeye.json",
+            "1907": "24/420/1907-karluk-river-sockeye.json",
+            "1908": "24/420/1908-karluk-river-sockeye.json",
+            "1909": "24/420/1909-karluk-river-sockeye.json",
+            "1910": "24/420/1910-karluk-river-sockeye.json",
+            "1911": "24/420/1911-karluk-river-sockeye.json",
+            "1912": "24/420/1912-karluk-river-sockeye.json",
+            "1913": "24/420/1913-karluk-river-sockeye.json",
+            "1914": "24/420/1914-karluk-river-sockeye.json",
+            "1915": "24/420/1915-karluk-river-sockeye.json",
+            "1916": "24/420/1916-karluk-river-sockeye.json",
+            "1917": "24/420/1917-karluk-river-sockeye.json",
+            "1918": "24/420/1918-karluk-river-sockeye.json",
+            "1919": "24/420/1919-karluk-river-sockeye.json",
+            "1920": "24/420/1920-karluk-river-sockeye.json",
+            "1921": "24/420/1921-karluk-river-sockeye.json",
+            "1922": "24/420/1922-karluk-river-sockeye.json",
+            "1923": "24/420/1923-karluk-river-sockeye.json",
+            "1924": "24/420/1924-karluk-river-sockeye.json",
+            "1925": "24/420/1925-karluk-river-sockeye.json",
+            "1926": "24/420/1926-karluk-river-sockeye.json",
+            "1927": "24/420/1927-karluk-river-sockeye.json",
+            "1928": "24/420/1928-karluk-river-sockeye.json",
+            "1929": "24/420/1929-karluk-river-sockeye.json",
+            "1930": "24/420/1930-karluk-river-sockeye.json",
+            "1931": "24/420/1931-karluk-river-sockeye.json",
+            "1932": "24/420/1932-karluk-river-sockeye.json",
+            "1933": "24/420/1933-karluk-river-sockeye.json",
+            "1934": "24/420/1934-karluk-river-sockeye.json",
+            "1935": "24/420/1935-karluk-river-sockeye.json",
+            "1936": "24/420/1936-karluk-river-sockeye.json",
+            "1937": "24/420/1937-karluk-river-sockeye.json",
+            "1938": "24/420/1938-karluk-river-sockeye.json",
+            "1939": "24/420/1939-karluk-river-sockeye.json",
+            "1940": "24/420/1940-karluk-river-sockeye.json",
+            "1941": "24/420/1941-karluk-river-sockeye.json",
+            "1942": "24/420/1942-karluk-river-sockeye.json",
+            "1943": "24/420/1943-karluk-river-sockeye.json",
+            "1944": "24/420/1944-karluk-river-sockeye.json",
+            "1945": "24/420/1945-karluk-river-sockeye.json",
+            "1946": "24/420/1946-karluk-river-sockeye.json",
+            "1947": "24/420/1947-karluk-river-sockeye.json",
+            "1948": "24/420/1948-karluk-river-sockeye.json",
+            "1949": "24/420/1949-karluk-river-sockeye.json",
+            "1950": "24/420/1950-karluk-river-sockeye.json",
+            "1951": "24/420/1951-karluk-river-sockeye.json",
+            "1952": "24/420/1952-karluk-river-sockeye.json"
+          }
+        }
+      }
+    }
+  },
+  "patterns": {
+    "file_naming": "YYYY-location-slug-species-slug.json",
+    "directory_structure": "location_id/species_id/"
+  },
+  "statistics": {
+    "total_files": 71,
+    "total_locations": 1,
+    "total_species": 1,
+    "year_range": {
+      "start": 1882,
+      "end": 1952
+    }
+  }
+}
