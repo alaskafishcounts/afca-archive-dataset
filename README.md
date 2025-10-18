@@ -1,72 +1,42 @@
 # 🏛️ AFCA Archive Dataset
 
-**AFCA Archive Dataset - Historical year-total fish count data from 1882-1952**
+**Historical year-total fish count data from Alaska's earliest commercial fishing era (1882-1952)**
 
-**Historical year-total fish count data from Alaska Department of Fish & Game (ADF&G) monitoring stations following AFCA Location Codes Framework**
+This repository contains the foundational historical fish count data for the Alaska Fish Count App (AFCA), representing the earliest systematic fish counting records in Alaska. The data spans 71 years of commercial fishing operations and provides crucial baseline information for understanding long-term salmon population trends and environmental changes.
 
-## 📊 Dataset Statistics
+## 📊 Dataset Overview
+
 - **Total Files**: 71 JSON files
-- **Total Locations**: 1 location with historical data
-- **ID Range**: 24 (Karluk River - AFCA Sport Framework)
-- **Year Range**: 1882-1952 (71 years)
-- **Species**: 1 species (Sockeye Salmon)
+- **Time Period**: 1882-1952 (71 years)
+- **Data Type**: Historical year-total catch records
+- **Source**: National Archives Record Group 022
+- **Format**: Simplified JSON optimized for historical data
 - **Framework**: AFCA Location Codes Framework
 
-## 🎯 About This Repository
-
-This repository contains historical year-total fish count data from the Karluk River monitoring station, operated by the Alaska Department of Fish & Game (ADF&G). This data represents the earliest recorded fish counts in Alaska and serves as the historical foundation for the Alaska Fish Count App archive section.
-
-**Note**: Archive dataset files use a simplified year-total format optimized for historical data, containing single annual counts rather than daily breakdowns.
-
-### 📋 AFCA Location Codes Framework (Archive: Historical Data)
-
-This dataset follows the official AFCA Location Codes Framework for historical data:
-
-#### Location ID: 24 (Karluk River)
-- **Location**: Karluk River, Kodiak Island, Alaska
-- **Species**: Sockeye Salmon (Species ID 420)
-- **Period**: 1882-1952 (71 years of historical data)
-- **Data Type**: Historical escapement counts
-
-## 📁 Repository Structure
+## 🗂️ Repository Structure
 
 ```
 afca-archive-dataset/
-├── manifest.json          # Dataset manifest and metadata
-├── README.md             # This documentation
-├── 24/                   # Location ID 24 (Karluk River)
-│   └── 420/              # Species ID 420 (Sockeye Salmon)
-│       ├── 1882-karluk-river-sockeye.json
-│       ├── 1883-karluk-river-sockeye.json
-│       ├── 1884-karluk-river-sockeye.json
-│       ├── ...
-│       └── 1952-karluk-river-sockeye.json
+├── README.md                    # This overview file
+├── manifest.json                # Dataset index and metadata
+├── location-info/               # Location-specific documentation
+│   └── karluk-river/           # Karluk River location info
+│       ├── README.md           # Location-specific README
+│       └── historical-context.md # Detailed historical information
+└── 24/                         # Location 24: Karluk River
+    └── 420/                    # Species 420: Sockeye Salmon
+        ├── 1882-karluk-river-sockeye.json
+        ├── 1883-karluk-river-sockeye.json
+        └── ... (71 files total)
 ```
 
-### 📋 File Naming Convention
+## 🎯 Current Locations
 
-- **Format**: `YEAR-location-slug-species-slug.json`
-- **Example**: `1882-karluk-river-sockeye.json`
-- **Location Slug**: Lowercase, hyphenated location name
-- **Species Slug**: Lowercase, hyphenated species name
+| Location ID | Location Name | Species | Years Available | Data Files |
+|-------------|---------------|---------|-----------------|------------|
+| 24 | [Karluk River](location-info/karluk-river/) | [sockeye](24/420/) | 1882-1952 | 71 files |
 
-## 🐟 Supported Species
-
-| Species ID | Common Name           | Scientific Name            | Color Code    |
-| ---------- | --------------------- | -------------------------- | ------------- |
-| 420        | Sockeye Salmon (Red)  | _Oncorhynchus nerka_       | Red           |
-
-## 📍 Archive Location Directory
-
-This dataset contains **1 location** with historical fish count data from 1882-1952.
-
-### Historical Archive Location
-
-| Location ID | Location Name | Species Available | Year Range |
-|-------------|---------------|-------------------|------------|
-| 24 | [Karluk River](https://github.com/alaskafishcounts/afca-archive-dataset/tree/main/24) | [sockeye](https://github.com/alaskafishcounts/afca-archive-dataset/tree/main/24/420) | 1882-1952 |
-
-*This table shows the single location in the archive dataset with 71 years of historical sockeye salmon data.*
+*This table shows the single location currently in the archive dataset with 71 years of historical sockeye salmon data.*
 
 ## 📊 Data Format
 
@@ -93,22 +63,15 @@ All files follow the AFCA Archive Dataset format optimized for historical year-t
         "description": "Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952",
         "image_url": "https://s3.amazonaws.com/NARAprodstorage/lz/seattle/rg-022/95115924/Batch0003/95115924-073/95115924-073-011/95115924-073-011-0002.jpg"
       },
-      "secondary_sources": [
-        {
-          "type": "USGS Water Data",
-          "url": "https://waterdata.usgs.gov/ak/nwis/uv?site_no=15295000",
-          "description": "USGS hydrological data for the location"
-        }
-      ],
       "historical_context": {
         "data_type": "Historical escapement counts",
         "period": "Early commercial fishing era",
         "methodology": "Weir operations and commercial catch records"
       }
     },
-    "source_attribution": "Alaska Department of Fish and Game (ADF&G)",
-    "data_license": "Public domain - ADF&G data",
-    "last_updated": "2025-01-20T00:00:00Z"
+    "source_attribution": "National Archives Record Group 022",
+    "data_license": "Public domain - National Archives data",
+    "last_updated": "2025-10-18T08:00:00Z"
   },
   "DATA": [
     [
@@ -127,9 +90,9 @@ All files follow the AFCA Archive Dataset format optimized for historical year-t
 }
 ```
 
-## 🏔️ Historical Context
+## 🏔️ Historical Significance
 
-The Karluk River sockeye salmon data represents the earliest systematic fish counting in Alaska, beginning in 1882. This historical data comes directly from the National Archives Record Group 022 document titled "Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952" and provides crucial baseline information for understanding long-term salmon population trends and environmental changes over 71 years.
+This dataset represents the earliest systematic fish counting in Alaska, beginning in 1882. The data comes directly from the National Archives Record Group 022 document titled "Catch of Karluk River Red Salmon from beginning of the canning industry in 1882 to 1952" and provides crucial baseline information for understanding long-term salmon population trends and environmental changes over 71 years.
 
 ### Primary Source Document:
 - **Document**: National Archives Record Group 022
@@ -147,29 +110,32 @@ The Karluk River sockeye salmon data represents the earliest systematic fish cou
 
 - **Sport Dataset**: Current sport fishing data (2002-2025) - [alaskafishcounts/adfg-sport-dataset](https://github.com/alaskafishcounts/adfg-sport-dataset)
 - **Commercial Dataset**: Commercial fishing data (1965-2025) - [alaskafishcounts/adfg-commercial-dataset](https://github.com/alaskafishcounts/adfg-commercial-dataset)
-- **SASAP Dataset**: Historical escapement data (1921-2017) - [alaskafishcounts/adfg-sasap-dataset](https://github.com/alaskafishcounts/adfg-sasap-dataset)
-- **Archive Dataset**: Historical data (1882-1952) - *This dataset*
+- **SASAP Dataset**: Historical research data (1921-2017) - [alaskafishcounts/adfg-sasap-dataset](https://github.com/alaskafishcounts/adfg-sasap-dataset)
 
-## 📄 License & Attribution
+## 📋 Usage
 
-This data is in the **Public Domain** and available for unrestricted use.
+This dataset is designed for:
+- **Historical Analysis**: Long-term population trend analysis
+- **Research**: Academic and scientific research on salmon populations
+- **Conservation**: Baseline data for conservation planning
+- **Education**: Historical context for fisheries management
 
-When using this data, please attribute:
-- **Data Source**: Alaska Department of Fish & Game (ADF&G)
-- **Repository**: alaskafishcounts/afca-archive-dataset
-- **Application**: Alaska Fish Count App
-- **Framework**: AFCA Location Codes Framework
+## 🔗 Integration
 
-## 📞 Contact Support
+The AFCA Archive Dataset integrates with the Alaska Fish Count App:
+- **Archive Page**: Historical data visualization
+- **Location Pages**: Individual monitoring station data
+- **Research Tools**: Long-term trend analysis capabilities
 
-- **GitHub Issues**: Report problems via repository Issues
-- **Data Source**: Alaska Department of Fish & Game
-- **Repository**: alaskafishcounts/afca-archive-dataset
+## 📄 License
+
+This dataset is released under **Public Domain** - National Archives data. All data originates from publicly available National Archives records and is free for use in research, education, and conservation efforts.
+
+## 🤝 Contributing
+
+This dataset is maintained as part of the Alaska Fish Count App project. For questions or contributions, please refer to the main AFCA repository.
 
 ---
 
-**Last Updated**: October 18, 2025  
-**Version**: AFCA v1.0.1  
-**Data Source**: Alaska Department of Fish & Game (ADF&G)  
-**Framework**: AFCA Location Codes Framework  
-**Repository**: alaskafishcounts/afca-archive-dataset
+**Alaska Fish Count App v1.0.1** - Historical Archive Dataset  
+*Preserving Alaska's fishing heritage through data*
