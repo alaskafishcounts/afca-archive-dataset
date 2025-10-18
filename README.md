@@ -1,8 +1,8 @@
 # 🏛️ AFCA Archive Dataset
 
-**AFCA Archive Dataset - Historical fish count data from 1882-1952**
+**AFCA Archive Dataset - Historical year-total fish count data from 1882-1952**
 
-**Historical fish count data from Alaska Department of Fish & Game (ADF&G) monitoring stations following AFCA Location Codes Framework**
+**Historical year-total fish count data from Alaska Department of Fish & Game (ADF&G) monitoring stations following AFCA Location Codes Framework**
 
 ## 📊 Dataset Statistics
 - **Total Files**: 71 JSON files
@@ -14,7 +14,9 @@
 
 ## 🎯 About This Repository
 
-This repository contains historical fish count data from the Karluk River monitoring station, operated by the Alaska Department of Fish & Game (ADF&G). This data represents the earliest recorded fish counts in Alaska and serves as the historical foundation for the Alaska Fish Count App archive section.
+This repository contains historical year-total fish count data from the Karluk River monitoring station, operated by the Alaska Department of Fish & Game (ADF&G). This data represents the earliest recorded fish counts in Alaska and serves as the historical foundation for the Alaska Fish Count App archive section.
+
+**Note**: Archive dataset files use a simplified year-total format optimized for historical data, containing single annual counts rather than daily breakdowns.
 
 ### 📋 AFCA Location Codes Framework (Archive: Historical Data)
 
@@ -68,38 +70,58 @@ This dataset contains **1 location** with historical fish count data from 1882-1
 
 ## 📊 Data Format
 
-All files follow the ADFG standard format with consistent column structure:
+All files follow the AFCA Archive Dataset format optimized for historical year-total data:
 
 ```json
 {
-  "COLUMNS": [
-     "YEAR",
-    "COUNTDATE",
-    "FISHCOUNT",
-    "SPECIESID",
-    "COUNTLOCATIONID",
-    "COUNTLOCATION",
-    "SPECIES"
-  ],
-  "DATA": [
-    [
-      1882,
-      "July, 15 1882 00:00:00",
-      15000,
-      420,
-      24,
-      "Karluk River",
-      "Sockeye"
-    ]
-  ],
   "metadata": {
     "location_id": 24,
     "location_name": "Karluk River",
     "species_id": 420,
-    "species_name": "Sockeye Salmon",
+    "species_name": "Sockeye Salmon (Red)",
     "year": 1882,
-    "last_updated": "2025-10-18T08:00:00Z",
-    "data_source": "ADF&G Historical Archive"
+    "data_type": "historical_catch",
+    "source": "Historical canning industry records (1882-1952)",
+    "method": "Commercial catch data",
+    "notes": "Historical data from canning industry - single annual count, no daily breakdown",
+    "created": "2025-08-18T16:03:01.541282",
+    "historical_period": "Pre-ADFG monitoring era",
+    "sources": {
+      "primary_source": {
+        "type": "ADF&G Fish Counts",
+        "url": "https://www.adfg.alaska.gov/sf/FishCounts/index.cfm?ADFG=main.displayResults&COUNTLOCATIONID=24&SpeciesID=420",
+        "description": "Official ADF&G fish count data for Karluk River"
+      },
+      "secondary_sources": [
+        {
+          "type": "USGS Water Data",
+          "url": "https://waterdata.usgs.gov/ak/nwis/uv?site_no=15295000",
+          "description": "USGS hydrological data for the location"
+        }
+      ],
+      "historical_context": {
+        "data_type": "Historical escapement counts",
+        "period": "Early commercial fishing era",
+        "methodology": "Weir operations and commercial catch records"
+      }
+    },
+    "source_attribution": "Alaska Department of Fish and Game (ADF&G)",
+    "data_license": "Public domain - ADF&G data",
+    "last_updated": "2025-01-20T00:00:00Z"
+  },
+  "DATA": [
+    [
+      "01-01",
+      "00:00",
+      58800,
+      "Annual catch for 1882"
+    ]
+  ],
+  "summary": {
+    "total_fish": 58800,
+    "data_points": 1,
+    "period": "Annual",
+    "historical_significance": "Pre-ADFG commercial fishing era"
   }
 }
 ```
