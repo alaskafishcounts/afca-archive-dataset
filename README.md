@@ -1,5 +1,10 @@
 # 🏛️ AFCA Archive Dataset
 
+> **✅ DATASET UPDATED - JANUARY 2025**  
+> This dataset has been **UNARCHIVED** and **UPDATED** as of January 15, 2025. Time format consistency fixes and manifest structure improvements have been applied.
+> 
+> **Last Updated: December 2025**
+
 **Historical year-total fish count data from Alaska's earliest commercial fishing era (1882-1952)**
 
 This repository contains the foundational historical fish count data for the Alaska Fish Count App (AFCA), representing the earliest systematic fish counting records in Alaska. The data spans 71 years of commercial fishing operations and provides crucial baseline information for understanding long-term salmon population trends and environmental changes.
